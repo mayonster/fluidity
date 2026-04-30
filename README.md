@@ -30,18 +30,18 @@ The program will take the following inputs:
 8. Size of pipe for each segment (program may or may not assume the size based on the presence of a reducer/expander or lack thereof)
 
 ## Data Types
-Information for each fitting will be in its own `struct`
-Information about the piping in its segment will be in its own `struct`
-Physical properties for the fluid will be in its its own `struct`
+- Information for each fitting will be in its own `struct`
+- Information about the piping in its segment will be in its own `struct`
+- Physical properties for the fluid will be in its its own `struct`
 
-The above items will be assembled into a segment `struct`
-This segment struct will contain flags for whether or not it is the system inlet, system outlet, control valve inlet, and control valve outlet.
+- The above items will be assembled into a segment `struct`
+  - This segment struct will contain flags for whether or not it is the system inlet, system outlet, control valve inlet, and control valve outlet.
 
-The segment structs will be associated in a `linked list`
+- The segment structs will be associated in a `linked list`
 
 
 ##### A note about the project
-Companies that perform these types of calculations frequently have tools such as excel sheets to perform them decently quickly with only quick checks to a reference text. This aims to automate the calculations, but it is primarily intended as a pet project for fun and to get back into programming in C because I find doing so incredibly enjoyable. If you're somehow reading this and have some suggestions to improve the code, feel free to start a discussion or PR; I'd be more than happy to talk. However, If you see this and your only thought "why don't you just use [insert well-known process simulation tool here]," this project is **not** for you.
+Companies that perform these types of calculations frequently have tools such as excel sheets to perform them decently quickly with only quick checks to a reference text. This aims to automate the calculations, but it is primarily intended as a pet project for fun and to get back into programming in C because I find doing so incredibly enjoyable. If you're somehow reading this and have some suggestions to improve the code or just want to chat about ChE, feel free to start a discussion or PR; I'd be more than happy to talk. However, If you see this and your only thought "why don't you just use [insert well-known process simulation tool here]," this project is **not** for you.
 
 <3
 
